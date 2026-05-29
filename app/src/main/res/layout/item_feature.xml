@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="8dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/surface_variant"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- Icon Background Circle -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardIconBackground"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/primary_container"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/ivFeatureIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_camera"
+                app:tint="@color/on_primary_container"
+                android:contentDescription="Feature icon" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Feature Title -->
+        <TextView
+            android:id="@+id/tvFeatureTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feature Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_surface_variant"
+            android:textAlignment="center"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Feature Description -->
+        <TextView
+            android:id="@+id/tvFeatureDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feature description"
+            android:textSize="12sp"
+            android:textColor="@color/on_surface_variant"
+            android:alpha="0.8"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Status Indicator -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/viewStatusIndicator"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/status_indicator_circle" />
+
+            <TextView
+                android:id="@+id/tvFeatureStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ready"
+                android:textSize="10sp"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
