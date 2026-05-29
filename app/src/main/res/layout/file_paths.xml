@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Internal storage -->
+    <internal-path name="sangeocam_images" path="." />
+
+    <!-- External storage -->
+    <external-path name="sangeocam_external" path="." />
+
+    <!-- Cache directory -->
+    <cache-path name="sangeocam_cache" path="." />
+
+    <!-- External cache directory -->
+    <external-cache-path name="sangeocam_external_cache" path="." />
+
+    <!-- Files directory -->
+    <files-path name="sangeocam_files" path="." />
+
+    <!-- External files directory -->
+    <external-files-path name="sangeocam_external_files" path="Pictures" />
+</paths>
